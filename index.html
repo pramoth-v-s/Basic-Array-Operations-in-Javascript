@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array = [1, 2, 2, 3, 4, 4, 5];
+        const uniqueArray = [...new Set(array)];
+        console.log("1. REMOVE DUPLICATE");
+        console.log(uniqueArray);
+
+        console.log("2. convert array to object");
+        const array1 = ['John', 30, 'New York'];
+        const obj = { ...array1 };
+        console.log(obj);
+
+        console.log("3. Sort and Reverse an array");
+        const array3 = [3, 1, 4, 1, 5, 9, 2, 6, 5];
+        array3.sort((a, b) => a - b); 
+        console.log("sort ",array3);
+        const array4 = [3, 1, 4, 1, 5, 9, 2, 6, 5];
+        array4.sort((a, b) => a - b).reverse(); 
+        console.log("reverse",array4); 
+
+        console.log("4. max and min");
+        const array5 = [3, 1, 4, 1, 5, 9, 2, 6, 5];
+        const maxValue = Math.max(...array5);
+        const Min = Math.min(...array5)
+        console.log("max",maxValue);
+        console.log("min",Min);
+
+        console.log("5.find index value");
+        const array6=[1,2,3,4,5,6]
+        var Counter=0
+        s = 2
+        for(var i in array6){
+            if(i==s){
+                console.log("Found Index: ",Counter-1)
+                break;
+            }
+            Counter+=1
+        }
+
+    </script>
+</body>
+</html>
